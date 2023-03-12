@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+}
+
+h1.company-name {
+  font-size: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  transition: background-color 0.6s;
+  background-color: #0C469C;
+  z-index: 1;
+}
+
+.nav-desktop a {
+  padding: 10px 20px;
+  color: #F9F7F7;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  position: relative;
+}
+
+.header-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 45vh;
+  position: relative;
+  background-image: url(/img/Dom\ jednorodzinny\ w\ Grodzisku\ Mazowieckim.jpg);
+}/*# sourceMappingURL=style.css.map */
