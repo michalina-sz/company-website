@@ -7,62 +7,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUILD Firma Budowlana</title>
     <link rel="stylesheet" href="css/hamburger.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/024adadb05.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <header class="header">
-            <!-- <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button> -->
+    <nav class="nav nav-desktop">
+        <a href="#">strona główna</a>
+        <a href="#aboutus">o nas</a>
+        <a href="#realizations">realizacje</a>
+        <a href="#contactus">kontakt</a>
+    </nav>
 
-            <!-- <nav class="nav nav-mobile">
-            <a href="#">strona główna</a>
-            <a href="#aboutus">o nas</a>
-            <a href="#realizations">realizacje</a>
-            <a href="#contact">kontakt</a>
-        </nav> -->
-        <!-- <div class="info-bar">
-            <a href="#">strona główna</a>
-            <a href="#aboutus">o nas</a>
-            <a href="#realizations">realizacje</a>
-            <a href="#contact">kontakt</a>
-        </div>     -->
-        <nav class="nav nav-desktop">
-                <a href="#">strona główna</a>
-                <a href="#aboutus">o nas</a>
-                <a href="#realizations">realizacje</a>
-                <a href="#contact">kontakt</a>
-            </nav>
-            <div class="container">
-                <div class="header-text">
-                    <h1 class="company-name">BUILD</h1>
-                    <h3>firma budowlana</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod doloribus provident.
-                        Blanditiis fuga
-                        itaque voluptatibus sit laborum excepturi magni.</p>
-                </div>
+    <header class="header">
+        <!-- <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button> -->
+
+        <!-- <nav class="nav nav-mobile">
+        <a href="#">strona główna</a>
+        <a href="#aboutus">o nas</a>
+        <a href="#realizations">realizacje</a>
+        <a href="#contact">kontakt</a>
+    </nav> -->
+    <!-- <div class="info-bar">
+        <a href="#">strona główna</a>
+        <a href="#aboutus">o nas</a>
+        <a href="#realizations">realizacje</a>
+        <a href="#contact">kontakt</a>
+    </div>     -->
+
+            <div class="header-text">
+                <h1 class="company-name">BUILD</h1>
+                <h3>firma budowlana</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod doloribus provident.
+                    Blanditiis fuga
+                    itaque voluptatibus sit laborum excepturi magni.</p>
             </div>
 
-            <div class="header-img">
-                <div class="header-shadow"></div>
+        <div class="header-img">
+            <div class="header-shadow"></div>
+        </div>
+
+        <a href="#cards">
+            <div class="header-arrow">
+                <img src="" alt="">
             </div>
+        </a>
+    </header>
 
-            <a href="#cards">
-                <div class="header-arrow">
-                    <img src="" alt="">
+        <a href="#cards">
+            <div class="header-arrow">
+                <img src="" alt="">
+            </div>
+        </a>
+    </header>
+
+    <section id="aboutus" class="aboutus"></section>
+
+    <section id="realizations" class="realizations"></section>
+
+    <section id="contactus" class="contactus">
+        <div class="contact-header">
+            <h2>Skontaktuj się z nami</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore qui commodi incidunt ipsum quia fugiat
+                atque. Aut consectetur odio autem.</p>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Informacje kontaktowe</h3>
+                <div class="contact-element">
+                    <p>Kolorowa 13/21 <br>05-700 Warszawa</p>
                 </div>
-            </a>
-        </header>
+                <div class="contact-element">
+                    <p>123-456-789</p>
+                </div>
+                <div class="contact-element">
+                    <p>email@gmail.com</p>
+                </div>
+            </div>
+            <div class="message-container">
+                <h3>Napisz do nas</h3>
+                <form method="post" action="sendemail.php">
+                    <div class="form-left">
+                        <div class="form-box"> <label for="name">Imię:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-box"> <label for="email">Adres e-mail:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
 
-        <footer>
-            <p class="footer-bottom-text">&copy; <span class="footer-year"></span>BUILD</p>
-        </footer>
-    </div>
+                    <div class="form-right">
+                        <div class="form-box">
+                            <label for="subject">Temat:</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+
+                        <div class="form-box"> <label for="message">Wiadomość:</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+
+                        <input type="submit" value="Wyślij">
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-bottom-text">&copy; <span class="footer-year"></span>BUILD</p>
+    </footer>
 </body>
 
 </html>
